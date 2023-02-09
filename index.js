@@ -51,7 +51,7 @@ gsap
         autoRotate: true,
         stagger: 1,
         start: 0,
-        end: i === 7 ? 1 : 1.001,
+        end: i === 8 ? 1 : 1.001,
         // end: 1,
       };
     },
@@ -90,6 +90,7 @@ const window4 = $(".four");
 const window5 = $(".five");
 const window6 = $(".six");
 const window7 = $(".seven");
+const window8 = $(".eight");
 
 const closeButton = $(".close-button");
 const popOut = $(".pop-out");
@@ -129,6 +130,14 @@ paper6.addEventListener("click", () => {
 const paper7 = document.querySelector("#paperSelect7");
 paper7.addEventListener("click", () => {
   window7.css({ display: "flex" });
+
+  // alert("seven");
+});
+
+const paper8 = document.querySelector("#paperSelect8");
+paper8.addEventListener("click", () => {
+  window8.css({ display: "flex" });
+
   // alert("seven");
 });
 
@@ -373,13 +382,85 @@ document.addEventListener("scroll", function () {
   win.scroll(function () {
     if (win.height() + win.scrollTop() == $(document).height()) {
       $(".outro-img").css({ display: "block" });
+      $(".intro-img").css({ display: "none" });
+      $(".intro-img2").css({ display: "none" });
+      $(".intro-img3").css({ display: "none" });
+      $(".intro-img4").css({ display: "none" });
       setTimeout(() => {
         $(".outro-img").css({ display: "none" });
         $(".outro-img2").css({ display: "block" });
+        $(".intro-img").css({ display: "none" });
+        $(".intro-img2").css({ display: "none" });
+        $(".intro-img3").css({ display: "none" });
+        $(".intro-img4").css({ display: "none" });
       }, "2000");
     } else {
       $(".outro-img").css({ display: "none" });
       $(".outro-img2").css({ display: "none" });
     }
   });
+});
+
+// window.addEventListener("load", function () {
+//   if (window.matchMedia("(max-width: 650px)").matches) {
+//     $(".zero").css({ display: "block" });
+//   } else {
+//     $(".zero").css({ display: "none" });
+//   }
+// });
+
+// $(window).on("load", function (event) {
+//   let windowWidth = $(window).width();
+//   if (windowWidth < 500) {
+//     $(".zero").css({ display: "block" });
+//   }
+//   {
+//     $(".zero").css({ display: "none" });
+//   }
+// });
+
+// window.addEventListener("resize", function () {
+//   if (window.matchMedia("(min-width: 650px)").matches) {
+//     $(".zero").css({ display: "none" });
+//   } else {
+//     $(".zero").css({ display: "block" });
+//   }
+// });
+
+/* Storing user's device details in a variable*/
+
+$(window).on("load", function (event) {
+  let details = navigator.userAgent;
+
+  /* Creating a regular expression 
+ containing some mobile devices keywords 
+ to search it in details string*/
+  let regexp = /android|iphone|kindle|ipad/i;
+
+  /* Using test() method to search regexp in details
+ it returns boolean value*/
+  let isMobileDevice = regexp.test(details);
+  if (isMobileDevice) {
+    $(".zero").css({ display: "block" });
+  } else {
+    $(".zero").css({ display: "none" });
+  }
+});
+
+window.addEventListener("resize", function () {
+  let details = navigator.userAgent;
+
+  /* Creating a regular expression 
+ containing some mobile devices keywords 
+ to search it in details string*/
+  let regexp = /android|iphone|kindle|ipad/i;
+
+  /* Using test() method to search regexp in details
+ it returns boolean value*/
+  let isMobileDevice = regexp.test(details);
+  if (isMobileDevice) {
+    $(".zero").css({ display: "block" });
+  } else {
+    $(".zero").css({ display: "none" });
+  }
 });
