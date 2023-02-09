@@ -322,25 +322,25 @@ document.addEventListener("scroll", function () {
       $(".intro-img2").css({ display: "block" });
       $(".intro-img3").css({ display: "none" });
       $(".intro-img4").css({ display: "none" });
-    }, "2000");
+    }, "4000");
     setTimeout(() => {
       $(".intro-img").css({ display: "none" });
       $(".intro-img2").css({ display: "none" });
       $(".intro-img3").css({ display: "block" });
       $(".intro-img4").css({ display: "none" });
-    }, "4000");
+    }, "8000");
     setTimeout(() => {
       $(".intro-img").css({ display: "none" });
       $(".intro-img2").css({ display: "none" });
       $(".intro-img3").css({ display: "none" });
       $(".intro-img4").css({ display: "block" });
-    }, "6000");
+    }, "12000");
     setTimeout(() => {
       $(".intro-img").css({ display: "none" });
       $(".intro-img2").css({ display: "none" });
       $(".intro-img3").css({ display: "none" });
       $(".intro-img4").css({ display: "none" });
-    }, "8000");
+    }, "16000");
   }
 });
 
@@ -355,25 +355,25 @@ window.addEventListener("load", (event) => {
     $(".intro-img2").css({ display: "block" });
     $(".intro-img3").css({ display: "none" });
     $(".intro-img4").css({ display: "none" });
-  }, "2000");
+  }, "4000");
   setTimeout(() => {
     $(".intro-img").css({ display: "none" });
     $(".intro-img2").css({ display: "none" });
     $(".intro-img3").css({ display: "block" });
     $(".intro-img4").css({ display: "none" });
-  }, "4000");
+  }, "8000");
   setTimeout(() => {
     $(".intro-img").css({ display: "none" });
     $(".intro-img2").css({ display: "none" });
     $(".intro-img3").css({ display: "none" });
     $(".intro-img4").css({ display: "block" });
-  }, "6000");
+  }, "12000");
   setTimeout(() => {
     $(".intro-img").css({ display: "none" });
     $(".intro-img2").css({ display: "none" });
     $(".intro-img3").css({ display: "none" });
     $(".intro-img4").css({ display: "none" });
-  }, "8000");
+  }, "16000");
 });
 
 document.addEventListener("scroll", function () {
@@ -393,7 +393,7 @@ document.addEventListener("scroll", function () {
         $(".intro-img2").css({ display: "none" });
         $(".intro-img3").css({ display: "none" });
         $(".intro-img4").css({ display: "none" });
-      }, "2000");
+      }, "4000");
     } else {
       $(".outro-img").css({ display: "none" });
       $(".outro-img2").css({ display: "none" });
