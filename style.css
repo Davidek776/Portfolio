@@ -76,6 +76,7 @@ svg {
 .paperBox {
   z-index: 100;
   position: absolute;
+
   /* top: -200px !important; */
 }
 
@@ -283,8 +284,69 @@ svg {
   }
 }
 
-/* @media (max-width: 2500px) {
+@media (max-width: 900px) {
   .paper {
-    width: 1rem;
+    width: 8rem;
   }
-} */
+  .paperBox {
+    position: absolute;
+    /* width: 300vw; */
+    /* top: -10px !important; */
+  }
+}
+
+@media (max-width: 800px) {
+  .paper {
+    /* width: rem; */
+  }
+  .b {
+    height: 250px;
+  }
+
+  .a {
+    /* margin-top: 50px !important; */
+    height: 550px;
+    margin-top: 60px !important;
+    /* z-index: 200; */
+  }
+}
+
+@media (max-width: 700px) {
+  .paperBox {
+    width: 150vw;
+    /* width: 100vw; */
+
+    /* left: 5rem !important; */
+    /* top: -10px !important; */
+  }
+}
+
+@media (max-width: 550px) {
+  .paperBox {
+    width: 160vw;
+    /* width: 100vw; */
+
+    /* left: 5rem !important; */
+    /* top: -10px !important; */
+  }
+}
+
+@media (max-width: 500px) {
+  .paperBox {
+    width: 175vw;
+    /* width: 100vw; */
+
+    /* left: 5rem !important; */
+    /* top: -10px !important; */
+  }
+}
+
+@media (max-width: 450px) {
+  .paperBox {
+    width: 185vw;
+    /* width: 100vw; */
+
+    /* left: 5rem !important; */
+    /* top: -10px !important; */
+  }
+}
