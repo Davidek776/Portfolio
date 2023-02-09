@@ -1,0 +1,290 @@
+body {
+  height: 0px;
+  background-color: black;
+  font-family: "Calibri", "Trebuchet MS", "Helvetica", sans-serif;
+}
+
+.nav-bar {
+  margin: 0 3rem;
+  margin-top: 3rem;
+  padding-bottom: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-bar h2 {
+  color: white;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  font-size: 1.8rem;
+  letter-spacing: 2.7rem;
+  padding-top: 1.4rem;
+}
+
+.bubleContainer {
+  display: flex;
+  justify-items: center;
+}
+
+.bubleBox {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+  left: 31vw;
+  bottom: 23rem;
+  /* z-index: 100000000 !important; */
+  background: no-repeat url("/Layers/Buble3.svg");
+  background-size: 50% 50%;
+  display: flex;
+}
+
+.bubleBox h3 {
+  color: white;
+  background: transparent;
+  width: 100%;
+}
+
+.buble {
+  width: 500px;
+}
+
+.b {
+  height: 200px;
+}
+
+.a {
+  margin-top: 50px !important;
+  height: 500px;
+  /* z-index: 200; */
+}
+
+svg {
+  position: absolute;
+}
+
+.paper {
+  /* fill: #8cc63f; */
+  /* transform: scaleY(-1); */
+  /* width: 3rem; */
+}
+
+.paperBox {
+  z-index: 100;
+  position: absolute;
+  /* top: -200px !important; */
+}
+
+.layers {
+  /* position: absolute; */
+  /* top: 100%; */
+}
+
+#result {
+  color: white;
+  z-index: 10000;
+  font-size: 20rem;
+}
+
+#animation {
+  z-index: 1000 !important;
+}
+
+#test-popup {
+  color: white;
+}
+
+/* POP-OUT WINDOW */
+
+.boxik {
+  /* width: 100rem; */
+  /* display: flex; */
+  /* align-content: center; */
+  /* flex-direction: column; */
+  /* justify-items: center; */
+  /* margin: 0 auto; */
+}
+
+.pop-out {
+  /*text-align: center;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;
+  */
+
+  position: fixed;
+  background: black;
+  top: 10px;
+  left: 17vw;
+  border: 5px solid #fefefe;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  /*color: white;
+  */
+  z-index: 100000;
+  /*background: url("/Layers/WindowBlack3.svg") no-repeat;
+  */
+  width: 60vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.projectPhoto {
+  width: 70%;
+}
+
+.projectDescription {
+  font-size: 1.5rem;
+}
+
+.photoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.pop-out .screen {
+  /* width: 60%; */
+}
+
+.close-button {
+  height: 70%;
+  position: relative;
+  right: 4%;
+}
+
+.content {
+  /* width: 50vw; */
+  /* height: 100%; */
+  overflow: scroll;
+
+  padding: 0 1rem;
+  padding-top: 1rem;
+  color: white;
+  padding-bottom: 5rem;
+  /* background-color: black; */
+}
+
+.controllers {
+  border-bottom: 5px solid #fefefe;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.outro {
+  position: absolute;
+  color: white;
+  background-color: black;
+  /* right: 10px; */
+  width: 100%;
+  position: relative;
+  bottom: 90rem;
+  /* top: 1000rem; */
+  font-size: 3rem;
+}
+
+.end-box {
+  background-color: black;
+  height: 50rem;
+  width: 105vw;
+  position: relative;
+  right: 5rem;
+  bottom: 50rem;
+}
+
+.intro-img {
+  width: 23rem;
+  position: relative;
+  bottom: 10rem;
+  /* z-index: 100000000000000000 !important; */
+}
+
+.intro-img2,
+.intro-img3,
+.intro-img4 {
+  width: 23rem;
+  position: relative;
+  bottom: 10rem;
+  display: none;
+
+  /* z-index: 100000000000000000 !important; */
+}
+
+.outro-img,
+.outro-img2 {
+  width: 23rem;
+  position: relative;
+  bottom: 10rem;
+  display: none;
+
+  /* z-index: 100000000000000000 !important; */
+}
+
+.github {
+  margin-top: 50px;
+  position: relative;
+  top: 0.5rem;
+  font-size: 3rem;
+  color: white;
+}
+
+.github:hover,
+:focus {
+  color: rgb(201, 201, 201);
+}
+
+.web-link {
+  color: #365dc9;
+  text-decoration: none;
+}
+.web-link:hover,
+:focus {
+  color: rgb(117, 117, 117);
+}
+
+@media (min-width: 1600px) {
+  .paper {
+    /* width: 1rem; */
+  }
+  .paperBox {
+    position: absolute;
+    top: -90px !important;
+  }
+}
+
+@media (min-width: 1900px) {
+  .paper {
+    width: 5rem;
+  }
+  .paperBox {
+    position: absolute;
+    top: -90px !important;
+  }
+}
+
+@media (min-width: 2200px) {
+  .paper {
+    width: 4rem;
+  }
+  .paperBox {
+    position: absolute;
+    top: -150px !important;
+  }
+}
+
+/* @media (max-width: 2500px) {
+  .paper {
+    width: 1rem;
+  }
+} */
