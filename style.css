@@ -75,7 +75,7 @@ svg {
 }
 
 .paperBox {
-  z-index: 10000;
+  z-index: 100000;
   position: absolute;
 
   /* top: -200px !important; */
@@ -93,8 +93,12 @@ svg {
 }
 
 #animation {
-  z-index: 1000 !important;
+  z-index: 100000 !important;
 }
+
+/* .buble-text {
+  z-index: 1!;
+} */
 
 #test-popup {
   color: white;
@@ -140,6 +144,10 @@ svg {
   display: none;
 }
 
+.space-box {
+  height: 15vh;
+}
+
 .projectPhoto {
   width: 70%;
 }
@@ -155,6 +163,10 @@ svg {
 
 .pop-out .screen {
   /* width: 60%; */
+}
+
+.published {
+  font-size: 6rem;
 }
 
 .close-button {
@@ -386,9 +398,16 @@ svg {
 
 h2 {
   color: #fff;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 200;
-  font-size: 16px;
+  font-weight: 600;
+  /* font-size: 1.5rem; */
+}
+
+.me-info {
+  font-size: 130%;
+}
+
+.me-info h4 {
+  font-weight: 600;
 }
 
 .mouse {
@@ -453,6 +472,26 @@ h2 {
   .paperBox {
     position: absolute;
     top: -150px !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  /* .paper {
+    width: 12rem;
+  } */
+
+  .paperBox {
+    width: 120vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* .paper {
+    width: 12rem;
+  } */
+
+  .paperBox {
+    width: 130vw;
   }
 }
 
