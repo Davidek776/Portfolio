@@ -82,7 +82,7 @@ gsap
 //   ease: "power1.out",
 // });
 // square.timeScale(0.5);
-let j = 1;
+
 const window1 = $(".one");
 const window2 = $(".two");
 const window3 = $(".three");
@@ -179,12 +179,12 @@ function foo() {
 //   }
 // });
 
-const test = () => {
-  alert("start");
-};
-const test2 = () => {
-  alert("end");
-};
+// const test = () => {
+//   alert("start");
+// };
+// const test2 = () => {
+//   alert("end");
+// };
 
 // ScrollTrigger.create({
 //   trigger: "svg",
@@ -222,7 +222,7 @@ $(".torso")
 $("#background-scroll").css("animation-duration", (0 * 4).toString() + "s");
 
 $(window).scroll(function () {
-  console.log("scrolling");
+  // console.log("scrolling");
   $(".stickman")
     .find("div")
     .css("animation-duration", (1).toString() + "s");
@@ -238,7 +238,7 @@ $(window).scroll(function () {
     this,
     "scrollCheck",
     setTimeout(function () {
-      console.log("stop");
+      // console.log("stop");
       $(".stickman")
         .find("div")
         .css("animation-duration", (0).toString() + "s");
@@ -290,10 +290,10 @@ const message = document.querySelector("#message");
 
 document.addEventListener("scroll", function () {
   if (isInViewport(box)) {
-    console.log("Is IN VIEWPORt");
+    // console.log("Is IN VIEWPORt");
     window.scrollTo(0, 9500);
   } else {
-    console.log("NOT INVIEWPORt");
+    // console.log("NOT INVIEWPORt");
   }
 });
 
@@ -380,8 +380,10 @@ document.addEventListener("scroll", function () {
   var win = $(window);
 
   win.scroll(function () {
-    if (win.height() + win.scrollTop() == $(document).height()) {
+    if (win.height() + win.scrollTop() > $(document).height() - 50) {
       $(".outro-img").css({ display: "block" });
+      $(".outro-img2").css({ display: "none" });
+
       $(".intro-img").css({ display: "none" });
       $(".intro-img2").css({ display: "none" });
       $(".intro-img3").css({ display: "none" });
@@ -399,6 +401,17 @@ document.addEventListener("scroll", function () {
       $(".outro-img2").css({ display: "none" });
     }
   });
+});
+const loaderContainer = document.querySelector(".loader-container");
+
+var w = $(window).width();
+if (w < 600) {
+} else {
+  loaderContainer.style.display = "block";
+}
+
+window.addEventListener("load", () => {
+  loaderContainer.style.display = "none";
 });
 
 // window.addEventListener("load", function () {
@@ -428,39 +441,3 @@ document.addEventListener("scroll", function () {
 // });
 
 /* Storing user's device details in a variable*/
-
-$(window).on("load", function (event) {
-  let details = navigator.userAgent;
-
-  /* Creating a regular expression 
- containing some mobile devices keywords 
- to search it in details string*/
-  let regexp = /android|iphone|kindle|ipad/i;
-
-  /* Using test() method to search regexp in details
- it returns boolean value*/
-  let isMobileDevice = regexp.test(details);
-  if (isMobileDevice) {
-    $(".zero").css({ display: "block" });
-  } else {
-    $(".zero").css({ display: "none" });
-  }
-});
-
-window.addEventListener("resize", function () {
-  let details = navigator.userAgent;
-
-  /* Creating a regular expression 
- containing some mobile devices keywords 
- to search it in details string*/
-  let regexp = /android|iphone|kindle|ipad/i;
-
-  /* Using test() method to search regexp in details
- it returns boolean value*/
-  let isMobileDevice = regexp.test(details);
-  if (isMobileDevice) {
-    $(".zero").css({ display: "block" });
-  } else {
-    $(".zero").css({ display: "none" });
-  }
-});
